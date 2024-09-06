@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shahid Afridi Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Shahid Afridi</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#Certification" class="nav-link"><span>Certification</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Shahid Afridi</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Technical Associates  ',
+						'Working  ',
+						'in VIP Associated   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2> A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="http://www.youtube.com/@shahidabrahamfan6125" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://vipassociates.in/" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Shahid Afridi </span></p>
+										<p><span class="title-s">Job Role: </span> <span> Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>2+ Years </span></p>
+										<p><span class="title-s">Address: </span> <span>Kolkata, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Postgresql </span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<!-- <span>Machine Learning</span> <span class="pull-right">80%</span> -->
+									<!-- <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am a dedicated and detail-oriented Data Analyst with over two years of experience in data management, MIS preparation, and banking and NBFC follow-ups. 
+									My technical skills include proficiency in Microsoft Excel, Power BI, PostgreSQL, and basic Python. I hold a B.A. degree 
+									from MANUU University and have earned certifications in various data-related tools and programming languages. 
+									With a strong background in statistical analysis and data processing, I am committed to delivering insightful 
+									and actionable reports that drive business decisions. I am currently working as a Technical Associate at VIP Associates, 
+									where I have been honing my skills in data analysis and reporting since June 2022..</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Data Management, MIS Reporting,&amp; Banking & Financial Services</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Arts</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Urdu, Bengali </span></li>
+									<li class="d-flex"><span>Technical Skills:</span> <span>Microsoft Power BI, Postgresql &amp; basics Python , MS Excel</span></li>
+									<!-- <li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
+									<li class="d-flex"><span>Interest:</span> <span> Play Football, Modelling photoshoot , Eating</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="http://www.linkedin.com/in/shahid-afridi-36b3a4264" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Experienced Technical Associate with 2+ years of experience in data management and MIS reporting. Skilled in data analysis, statistical analysis, and basic Python. Proven ability to drive business strategies through data-driven insights..</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-Present</span>
+						<h2>Technical Associate </h2>
+						<span class="position">VIP Associated </span> <img src="kkimagesabout-me.png" class="img-fluid rounded b-shadow-a" alt="">
+						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
+							<ul>
+								<li>Analyzed data related to MIS preparation, identified key trends, and provided actionable insights to enhance business strategies.</li>
+								<li>Developed forecasting models to predict financial metrics and optimize resource allocation, achieving a model performance of 92%.</li>
+								<li>Designed and executed data-driven reports and statistical analyses, leading to improved efficiency and decision-making processes.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<!-- <div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">iQuanti</span>
+						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul> -->
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2021</span>
+    					<h2>Bachelor of Arts</h2>
+    					<span class="position">Maulana Azad National Urdu University</span>
+    					<p class="mt-4">Grade: 2nd class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016-2017</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">The Adabi Society High Madrasah (H.S) </span>
+    					<p class="mt-4">Grade: 2nd class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/file/d/1eDZlkLrfk8JzLSLZIV22dcuoGUDWz-ge/view" class="btn btn-primary py-4 px-5" target="_blank">Downlod CV </a></p>
+				</div>
+			</div>
+			
+			
+    	</div>
+    </section>
+
+   
+<!-- 333 -->
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/shahidafridiw/Bajaj-Finance-Project/blob/main/Image%20.png" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shahidafridiw/Bajaj-Finance-Project/tree/main">Bajaj Finance Sales Analysis Dashboard </a></h3>
+                <p>Analyzed Finance data Project and increase the business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/shahidafridiw/Data-Analysis-Power-bi-Project/blob/main/Image%20.png" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shahidafridiw/Data-Analysis-Power-bi-Project/tree/main">Data Analysis using Power BI Project </a></h3>
+                <p>I created an exciting project that blends creativity with practicality, featuring unique design and vibrant visuals that showcase my passion for innovation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shahidafridiw/Power-BI-Sales-Dashboard-Project/blob/main/Project%20.png" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shahidafridiw/Power-BI-Sales-Dashboard-Project/tree/main">Power BI Sales dashboard Project </a></h3>
+                <p>I built a Power BI dashboard with well-organized data for clear insights and easy analysis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/shahidafridiw/Comprehensive-Sales-Performance-Dashboard-Product-Segment-and-Profit-Analysis/blob/main/Image%20.png" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/shahidafridiw/Comprehensive-Sales-Performance-Dashboard-Product-Segment-and-Profit-Analysis/tree/main">Comprehensive Sales Performance Dashboard: Product, Segment, and Profit Analysis</a></h3>
+				  <p>A Power BI dashboard visualizing sales, profit, and product performance by segment and region for better business insights.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/shahidafridiw/Dual-Desk-Weekly-Dashboard-/blob/main/Image%20.png" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/shahidafridiw/Dual-Desk-Weekly-Dashboard-/tree/main">Dual Desk Weekly Dashboard: Real-Time Procurement and Delivery Insights</a></h3>
+				  <p>Designed an interactive Power BI dashboard to recommend financial products and services to targeted customer groups. Features dynamic visuals,</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+<!-- 333 -->
+<!-- shahid **********************************************************************************************-->
+	<section class="ftco-section" id="Certification">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certification</h1>
+			  <h2 class="mb-4">Certification</h2>
+			  <p>Certified in Advanced Excel, Power BI, Python, and PostgreSQL for Data Analysis and Visualization.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/shahidafridiw/Python-Certificate/blob/main/Python%20Certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_101.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/shahidafridiw/Python-Certificate">Python Programming Certification </a></h3>
+				  <p>HackerRank, 26 Ju1, 2023.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/shahidafridiw/PostgreSQL-Certificate/blob/eb46b451a9bb04eeb3271f241cfd85b136fc09c4/PostgreSQL%20Certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_102.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/shahidafridiw/PostgreSQL-Certificate/tree/eb46b451a9bb04eeb3271f241cfd85b136fc09c4">PostgreSQL Certification </a></h3>
+				  <p>Programming Hub, June 29, 2023.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/shahidafridiw/Microsoft-Excel-Certificate/blob/main/Excel%20Certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_103.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/shahidafridiw/Microsoft-Excel-Certificate/tree/main">Microsoft Excel Certification </a></h3>
+				  <p>Corporate Finance Institute, June 20, 2023 </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  <br>
+		  <!-- added justify-content-center to center align the last two projects -->
+		  <div class="row d-flex justify-content-center">  
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://github.com/shahidafridiw/Microsoft-Power-BI-Certificate/blob/main/Microsoft%20Power%20BI%20Certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_104.jpg');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/shahidafridiw/Microsoft-Power-BI-Certificate/tree/main">Microsoft Power BI Certification</a></h3>
+					<p>Itronix Solutions, 30 June 2023</p>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	  <!-- shahid ************************************************************************************************************* -->
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="27">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="98">0</strong>
+                <span>Project Participant</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> 
+            <div class="block-18">
+              <div class="text">
+				<p>Shahid Afridi</p>     
+                <!-- <strong class="number" data-number="This website is owned by Shahid Afridi">0</strong> -->
+                <span>Website Owner </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Explore My Project Portfolio on<span> Github  </span> </h2>
+						<div class="heading"> <h4> Aspiring Data Analyst & Business Problem Solver </h4>
+						<br>
+						<p><a href="https://github.com/shahidafridiw" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Picnic garden Road, Near 39 Bus Stand, Tiljala,Kolkata, West Bengal - 700039
+					</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 8820856343 </a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">sa5u1599@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<!-- Telegram Logo -->
+					<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo" style="width: 100px; height: 100px;">
+				</div>
+				<h3 class="mb-4">Telegram Channel</h3>
+				<p><a href="https://t.me/shahidafridi1599" target="_blank">Join my Telegram Channel</a></p>
+			</div>
+		</div>
+		
+
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6SzykbwQLeZi_3W2NVBb7VfbX9hgbsVwPKyzQc1Kg0YglPw/viewform?usp=sf_link" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+			
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@shahidabrahamfan6125/featured"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="http://www.linkedin.com/in/shahid-afridi-36b3a4264"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/S hahidA76922"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/shahid.abraham.14/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/shahid1599angus/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			    <p>
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed and developed by <a href="#" target="_blank">Shahid Afridi</a>
+				</p>
+				
+				
+				<!-- <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p> 
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
